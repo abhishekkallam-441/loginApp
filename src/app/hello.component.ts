@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'hello',
-  template: `  
-  <div  class="container p-4">
-    <div class="d-flex justify-content-end">
+  template: ` 
+  <div class="d-flex justify-content-end col-11">
     <button class="btn btn-secondary"(click)="logOut()">Logout</button>
     </div>
+  <div  class="container p-4 col-md-3">    
     <div *ngIf="!subStatus">
     <h3 class="">Personal Information</h3>
     <div>
