@@ -38,6 +38,12 @@ export class AppComponent {
       return true;
     }
   }
+  logout(value:any){
+    this.isVerified = value;
+    this.name = '';
+    this.email = '';
+    this.password = '';
+  }
   reVerif() {}
   getDetails() {}
 }
