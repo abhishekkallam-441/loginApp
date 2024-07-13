@@ -1,0 +1,22 @@
+p {
+  font-style:italic;
+}
+.cu {
+  cursor: pointer;
+}
+.danger {
+  color: red;
+}
+.green {
+  color: green;
+}
+.marginLeft{
+  margin-left: 6px;
+}
+label:after{ 
+  content: "*";
+  color: red;
+};
+.btnAlign{
+  margin-right: auto;
+}

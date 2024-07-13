@@ -1,0 +1,22 @@
+<div class="container pt-1">
+  <h1 class="text-center mt-1">My APP</h1>
+  <div *ngIf="!isVerified" class="p-5 m-5 pt-5">
+    <h3>Login</h3>
+    <label class="form-label">Name</label>
+    <input class="form-control" type="text" [(ngModel)]="name" />
+    <label class="form-label">Email</label>
+    <input class="form-control" type="email" [(ngModel)]="email" />
+    <label class="form-label">Password</label>
+    <input type="password" class="form-control" [(ngModel)]="password" />
+    <p *ngIf="error" class="text-danger">Please check Email or password</p>
+    <button
+      type="submit"
+      class="btn btn-success mt-2"
+      [disabled]="isVerified"
+      (click)="onSubmit()"
+    >
+      Sign In
+    </button>
+  </div>
+</div>
+<hello *ngIf="isVerified" (logOff)="isVerified = $event" [name]="name" [email]="email"></hello>
