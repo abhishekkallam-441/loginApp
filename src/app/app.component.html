@@ -19,4 +19,4 @@
     </button>
   </div>
 </div>
-<hello *ngIf="isVerified" (logOff)="isVerified = $event" [name]="name" [email]="email"></hello>
+<hello *ngIf="isVerified" (logOff)="logout($event)" [name]="name" [email]="email"></hello>
